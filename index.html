@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/cards.svg">
+    <title>Mario Bro's Do Battle</title>
+    <meta name = "author" content ="Christopher Deo">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Fontdiner+Swanky&family=Irish+Grover&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="styles.css">
+  <!-- the script file must be set to type="module" in order to import the classes from their respective pages -->
+  <script src="./script.js" type="module"></script>    
+</head>
+<!-- starts the game automatically as soon as page is loaded -->
+<body>   
+
+    <header>
+        <div id="logoArea">
+            <p>Built by</p>
+        <img id="myLogo"  class="headerImage" src="./images/my-logo.png">
+        <p>CDev</p>
+        </div>
+        <img class="headerImage" src="./images/boom.png">
+        <h1 class="headerText">Mario Plays WAR</h1>
+     <img class="headerImage" src="./images/angry-ammo.png">
+     <img class="headerImage" src="./images/carnivoran.png">
+    </header>
+
+    <main>
+        
+            <div id="player1Area">
+            <div class="playerHeader">
+                <h3 id="p1Name"></h3>
+                <img id="mario" src="./images/mario.png">
+                
+            </div>
+                
+            <!-- player 1's card deck goes here-->
+            <div id="p1Deck" class="deck">26</div> 
+            <!-- image representing the played cards goes here. will need to toggle show/hide-->
+
+            <div id="p1PlayedCards" class="red" data-value="9 ♥">
+                ♥
+            </div>
+            <!-- will toggle show/hidden before each card flip -->
+            <div class="scores">
+                 <!-- player's status toggles win/loss & will display here -->
+                <h3 id="p1ScoreText"></h3>
+                <div class="'gold"></div>
+                <!-- insert gold pot image here -->
+                <img class="kettle" src="./images/goldPot.png">
+                <h3 id ="p1Points">0</h3>
+            </div>
+        </div>
+    
+
+ <!-- text placeholder to be used to display various messages throughout the game -->
+    <div class="text">The standard Lorem Ipsum passage, used since the 1500s
+                </div>
+
+    <div id="player2Area">
+        
+        <div class="playerHeader">
+            <h3 id="p2Name"></h3>
+            <img id="luigi" src="./images/luigi.png">
+        
+        </div>
+        <div id="p2Deck" class="deck">26</div>
+        
+        <div id="p2PlayedCards" class= "black" data-value="A ♣">
+            <!-- image representing the played cards goes here. will need to toggle show/hide-->
+            ♣
+        </div>
+    
+    
+        <div class="Scores">
+            <!-- player 2's status toggles win/loss & will display here -->
+            <h3 id="p2ScoreText"></h3> 
+            <div class="gold">
+            <!--gold pot image goes in the "gold" div -->
+            <img class=kettle src="./images/goldPot.png">
+             <h3 id="p2Points">0</h3>
+             <!-- points will display here and update with each winning round -->
+            </div> 
+            </div>
+        </div>
+            
+    </main>
+
+    <!-- should play sound effect upon page load -->
+     <!-- <audio autoplay>
+        <source src="./sounds/battle.wav" type="audio/wav">
+      </audio> -->
+
+ 
+</body>
+</html>

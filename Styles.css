@@ -1,0 +1,158 @@
+
+*, *::after, *::before { 
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Comic Neue', cursive;
+   font-family: 'Fontdiner Swanky', cursive;
+   font-family: 'Irish Grover', cursive;
+   background-image: url('./images/cammo-background.jpeg');
+   border-radius: .5rem;
+  }
+/* =========================================================
+============================================================ */
+
+/* header styling */
+  
+header{
+    background-color: mediumblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    min-height: 125px
+}
+
+.headerText{
+    font-family:'Fontdiner Swanky', cursive;
+    color: whitesmoke;
+    }
+
+.headerImage{
+    max-height:100px;
+    max-width: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#logoArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px
+}
+
+#myLogo{
+    box-shadow: 0 0 15px white;
+    border-radius: 5%
+}
+/* =======================================================
+==========================================================*/
+
+/* game board styling */
+
+
+main{
+    background-color: lightgreen;
+    height: 100%
+    margin-top: 25px;
+    border-radius: 0.5rem;
+    margin: 25px ;
+}
+
+#player1Area{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+#player2Area{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+playerHeader{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+.kettle{
+    height: 125px;
+    width: 125px;
+    }
+    
+.gold{
+    max-height: auto;
+    max-width:150px;
+    }
+    
+.scores2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px
+    } 
+    
+
+#mario{
+    max-height: 100px;
+    max-width: auto;
+    }
+ 
+#luigi{
+    max-height: 120px;
+    max-width: auto;
+    }
+
+
+.text{
+    margin: 0 55px 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+/* ======================================================
+========================================================= */
+
+/* cards and card deck styling */
+.deck{
+    height: 155px;
+    width: 110px;
+    border: 1px solid black; 
+    border-radius: 0.5rem;
+    background-image: url(./images/card-back-red.png);
+    background-size:cover;
+    box-shadow: 0 0 15px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+  }
+#p1PlayedCards{
+    position: relative;
+    height: 155px;
+    width: 110px;
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    box-shadow: 0 0 15px black;
+}
+
+#p2PlayedCards{
+    position: relative;
+    height: 155px;
+    width: 110px;
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    box-shadow: 0 0 15px black;
+}
+
+
+
