@@ -73,7 +73,7 @@ export default class Deck{  //only need card as param and move the function to m
             let newIndex = Math.floor(Math.random() * (i + 1)); //creates max randomness in shuffled deck
             let oldIndex = this.cards[newIndex];  //declares OldIndex as the array newIndex
                  this.cards[newIndex] = this.cards[i];  //value of newIndex is assigned to the current index of the cards array.
-                 this.cards[i] = oldIndex;   //swapps the indexes of the array much like a dealer rotating the cards throughout the deck when shuffling cards
+                 this.cards[i] = oldIndex;   //swaps the indexes of the array much like a dealer rotating the cards throughout the deck when shuffling cards
         }
     }
 

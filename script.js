@@ -27,7 +27,7 @@ function startGame() {  //builds and shuffles a new deck when game is started
   player1Deck = deck.cards.slice(0, deckMidpoint);
 
   player2Deck = deck.cards.slice(deckMidpoint, deck.numberOfCards);
-  console.log(player2Deck, player1Deck);
+  // console.log(player2Deck, player1Deck);
 
   let gameInProgress = true;
 
@@ -52,6 +52,7 @@ function startGame() {  //builds and shuffles a new deck when game is started
     //creating statement to contine the game
     if (player1Deck.length === 0) {
       console.log('Player 2 Wins the Game!')
+      
       gameInProgress = false;
     } else if (player2Deck.length === 0) {
       console.log('Player 1 Wins The Game!')
