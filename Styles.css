@@ -139,7 +139,7 @@ playerHeader, #player2Header {
     box-shadow: 0 0 15px black;
 }
 
-.points {
+#p1Points, #p2Points {
     color: whitesmoke;
     position: relative;
     left: 3rem;
@@ -153,8 +153,7 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     border-radius: 5px;
-    min-height: 125px;
-    width: 100%;
+    min-height: 5rem;
     color: whitesmoke;
 }
 
