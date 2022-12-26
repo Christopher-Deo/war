@@ -62,3 +62,6 @@ let deal = document.getElementById("dealBtn")
   deal.addEventListener("click", startGame);
 //calling the function that starts the game
 // window.onload = startGame;   //refrences the start game function but not executing it
+window.onload = function () {
+  document.getElementById("my_audio").play();
+}
