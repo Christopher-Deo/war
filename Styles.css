@@ -1,22 +1,25 @@
-
-*, *::after, *::before { 
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Comic Neue', cursive;
-   font-family: 'Fontdiner Swanky', cursive;
-   font-family: 'Irish Grover', cursive;
-   background-image: url('./images/cammo-background.jpeg');
-   border-radius: .5rem;
-  }
+    font-family: 'Fontdiner Swanky', cursive;
+    font-family: 'Irish Grover', cursive;
+    /* background-image: url('./images/cammo-background.jpeg'); */
+    border-radius: .5rem;
+    background-color: #607466;
+}
+
 /* =========================================================
 ============================================================ */
 
 /* header styling */
-  
-header{
-    background-color: mediumblue;
+
+header {
+    background-color: #343E3D;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,137 +28,150 @@ header{
     width: 100%;
 }
 
-.headerText{
-    font-family:'Fontdiner Swanky', cursive;
+.headerText {
+    font-family: 'Fontdiner Swanky', cursive;
     color: whitesmoke;
-    }
+}
 
-.headerImage{
-    max-height:100px;
+.headerImage {
+    max-height: 100px;
     max-width: auto;
     margin-left: 25px;
     margin-right: 25px;
 }
 
-#logoArea{
+#logoArea {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 15px
 }
 
-#myLogo{
+#myLogo {
     /* box-shadow: 0 0 15px white; */
     /* border-radius: 5% */
     height: 4rem;
 }
+
 /* =======================================================
 ==========================================================*/
 
 /* game board styling */
 
 
-main{
-    background-color: lightgreen;
+main {
+    background-color: #7BD389;
     height: 100%;
     margin-top: 25px;
     border-radius: 0.5rem;
-    margin: 25px ;
+    margin: 25px;
+    border: 3px solid #343E3D;
+    box-shadow: 0 0 15px black;
 }
 
-#player1Area{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    }
-
-#player2Area{
+#player1Area, #player2Area {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    }
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 
-playerHeader{
-    display:flex;
+
+
+playerHeader, #player2Header {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    }
-    
-.kettle{
-    height: 125px;
-    width: 125px;
-    margin-top: 25px;
-    }
-    
-.gold{
-    max-height: auto;
-    max-width:150px;
-    }
-    
-.scores2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 50px
-    } 
-    
+}
 
-#mario{
+.kettle {
+    position: absolute;
+    padding-bottom: 4rem;
+    height: 9rem;
+    width: 125px2
+}
+
+#mario {
     max-height: 100px;
     max-width: auto;
-    }
- 
-#luigi{
+}
+
+#luigi {
     max-height: 120px;
     max-width: auto;
-    }
+}
 
-
-.text{
+.text {
     margin: 0 55px 50px 0;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
 }
 
 /* ======================================================
 ========================================================= */
 
 /* cards and card deck styling */
-.deck{
+.deck {
     height: 155px;
     width: 110px;
-    border: 1px solid black; 
+    border: 1px solid black;
     border-radius: 0.5rem;
     background-image: url(./images/card-back-red.png);
-    background-size:cover;
+    background-size: cover;
     box-shadow: 0 0 15px black;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 3em;
-  }
-#p1PlayedCards{
+}
+
+#p1PlayedCards,
+#p2PlayedCards {
     position: relative;
     height: 155px;
     width: 110px;
-    background-color: whitesmoke;
+    background-color: #38E4AE;
     border-radius: 0.5rem;
     border: 1px solid black;
     box-shadow: 0 0 15px black;
 }
 
-#p2PlayedCards{
+.points {
+    color: whitesmoke;
     position: relative;
-    height: 155px;
-    width: 110px;
-    background-color: whitesmoke;
+    left: 3rem;
+    top: 2.5rem;
+}
+
+footer {
+    background-color: #343E3D;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    min-height: 125px;
+    width: 100%;
+    color: whitesmoke;
+}
+
+#messageArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#dealBtn {
+    background-color: yellow;
     border-radius: 0.5rem;
     border: 1px solid black;
     box-shadow: 0 0 15px black;
+    font-size: 1.5em;
+    margin: 25px;
+
 }
-
-
-
